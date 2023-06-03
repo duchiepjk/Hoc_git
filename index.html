@@ -55,5 +55,70 @@
         delectus, in expedita?
       </div>
     </div>
+    <style>
+      .flex-layout {
+        --columns: 4;
+        --spacing: 25px;
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: var(-1 * var(--spacing));
+        margin-bottom: var(-1 * var(--spacing));
+      }
+      .flex-item {
+        width: calc(100% / var(--columns) - var(--spacing));
+        margin-left: var(--spacing);
+        margin-bottom: var(--spacing);
+      }
+      .flex-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    </style>
+    <div class="flex-layout">
+      <div class="flex-item">
+        <img
+          src="https://source.unsplash.com/random"
+          alt=""
+          class="flex-image"
+        />
+      </div>
+      <div class="flex-item">
+        <img
+          src="https://source.unsplash.com/random"
+          alt=""
+          class="flex-image"
+        />
+      </div>
+      <div class="flex-item">
+        <img
+          src="https://source.unsplash.com/random"
+          alt=""
+          class="flex-image"
+        />
+      </div>
+      <div class="flex-item">
+        <img
+          src="https://source.unsplash.com/random"
+          alt=""
+          class="flex-image"
+        />
+      </div>
+      <div class="flex-item">
+        <img
+          src="https://source.unsplash.com/random"
+          alt=""
+          class="flex-image"
+        />
+      </div>
+      <div class="flex-item">
+        <img
+          src="https://source.unsplash.com/random"
+          alt=""
+          class="flex-image"
+        />
+      </div>
+    </div>
 </body>
 </html>
